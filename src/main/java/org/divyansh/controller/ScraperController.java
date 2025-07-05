@@ -15,4 +15,8 @@ public class ScraperController {
             @RequestParam String city) {
         return OneMgScraper.get1mgBestDeal(medicine, city);
     }
+    @GetMapping("/Test")
+    public void test() {
+       System.out.println("Test Completelted");
+    }
 }
